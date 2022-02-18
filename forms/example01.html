@@ -12,12 +12,237 @@
             margin: 0;
             padding: 0;
         }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+            height: 200px;
+        }
+        
+        body {
+            background-color: #DCDCDC;
+            font-family: Century Gothic, Open Sans, Sans-serif;
+        }
+        
+        .wrapper {
+            margin: auto;
+            width: 960px;
+            background-color: white;
+        }
+        
+        nav {
+            margin-top: 5px;
+            padding: 0px;
+        }
+        
+        nav ul {
+            background-color: #202020;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            list-style-type: none;
+        }
+        
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 25px;
+            display: block;
+            color: white;
+        }
+        
+        nav a:first-child {
+            padding-left: 15px;
+        }
+        
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        .content {
+            width: 300px;
+            float: left;
+            padding: 15px;
+        }
+        
+        aside {
+            width: 500px;
+            float: right;
+            padding: 15px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+        
+        p {
+            padding-bottom: 20px;
+            line-height: 20px;
+            font-size: 17px;
+        }
+        
+        footer {
+            background-color: #202020;
+            color: white;
+        }
+        
+        footer p {
+            margin-left: 15px;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+        
+        .blocker {
+            clear: both !important;
+        }
     </style>
 </head>
 
 <body>
+    <div class="wrapper">
 
-    <img src="assets/images/banner-960px-by-200px-html-form-application.png" alt="This is a banner image with a 960px by 200px dimension">
+        <img src="assets/images/banner-960px-by-200px-html-form-application.png" alt="This is a banner image with a 960px by 200px dimension">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <h3>
+                You have reached the application form.
+            </h3><br />
+            <p>
+                Feel free to fill out the application form on the right side of this page.
+            </p>
+
+        </section>
+        <aside>
+            <h1>HTML Form Application</h1><br />
+            <form>
+                <label>First Name</label>
+                <input type="text" name="firstname" placeholder="Your First Name" /><br />
+                <label>Last Name</label>
+                <input type="text" name="lastname" placeholder="Your Last Name" /><br />
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="sample@host.com" /><br />
+
+                <label>Telephone No.</label>
+                <input type="text" name="telno" placeholder="Telephone No. Here" /><br />
+                <label>Province</label>
+                <select id="province">
+                    <option value="PH-ABR">Abra</option>
+                    <option value="PH-AGN">Agusan del Norte</option>
+                    <option value="PH-AGS">Agusan del Sur</option>
+                    <option value="PH-AKL">Aklan</option>
+                    <option value="PH-ALB">Albay</option>
+                    <option value="PH-ANT">Antique</option>
+                    <option value="PH-APA">Apayao</option>
+                    <option value="PH-AUR">Aurora</option>
+                    <option value="PH-BAS">Basilan</option>
+                    <option value="PH-BAN">Bataan</option>
+                    <option value="PH-BTN">Batanes</option>
+                    <option value="PH-BTG">Batangas</option>
+                    <option value="PH-BEN">Benguet</option>
+                    <option value="PH-BIL">Biliran</option>
+                    <option value="PH-BOH">Bohol</option>
+                    <option value="PH-BUK">Bukidnon</option>
+                    <option value="PH-BUL">Bulacan</option>
+                    <option value="PH-CAG">Cagayan</option>
+                    <option value="PH-CAN">Camarines Norte</option>
+                    <option value="PH-CAS">Camarines Sur</option>
+                    <option value="PH-CAM">Camiguin</option>
+                    <option value="PH-CAP">Capiz</option>
+                    <option value="PH-CAT">Catanduanes</option>
+                    <option value="PH-CAV">Cavite</option>
+                    <option value="PH-CEB">Cebu</option>
+                    <option value="PH-COM">Compostela Valley</option>
+                    <option value="PH-NCO">Cotabato</option>
+                    <option value="PH-DAV">Davao del Norte</option>
+                    <option value="PH-DAS">Davao del Sur</option>
+                    <option value="PH-DVO">Davao Occidental</option>
+                    <option value="PH-DAO">Davao Oriental</option>
+                    <option value="PH-DIN">Dinagat Islands</option>
+                    <option value="PH-EAS">Eastern Samar</option>
+                    <option value="PH-GUI">Guimaras</option>
+                    <option value="PH-IFU">Ifugao</option>
+                    <option value="PH-ILN">Ilocos Norte</option>
+                    <option value="PH-ILS">Ilocos Sur</option>
+                    <option value="PH-ILI">Iloilo</option>
+                    <option value="PH-ISA">Isabela</option>
+                    <option value="PH-KAL">Kalinga</option>
+                    <option value="PH-LUN">La Union</option>
+                    <option value="PH-LAG">Laguna</option>
+                    <option value="PH-LAN">Lanao del Norte</option>
+                    <option value="PH-LAS">Lanao del Sur</option>
+                    <option value="PH-LEY">Leyte</option>
+                    <option value="PH-MAG">Maguindanao</option>
+                    <option value="PH-MAD">Marinduque</option>
+                    <option value="PH-MAS">Masbate</option>
+                    <option value="PH-MDC">Mindoro Occidental</option>
+                    <option value="PH-MDR">Mindoro Oriental</option>
+                    <option value="PH-MSC">Misamis Occidental</option>
+                    <option value="PH-MSR">Misamis Oriental</option>
+                    <option value="PH-MOU">Mountain Province</option>
+                    <option value="PH-NEC">Negros Occidental</option>
+                    <option value="PH-NER">Negros Oriental</option>
+                    <option value="PH-NSA">Northern Samar</option>
+                    <option value="PH-NUE">Nueva Ecija</option>
+                    <option value="PH-NUV">Nueva Vizcaya</option>
+                    <option value="PH-PLW">Palawan</option>
+                    <option value="PH-PAM">Pampanga</option>
+                    <option value="PH-PAN">Pangasinan</option>
+                    <option value="PH-QUE">Quezon</option>
+                    <option value="PH-QUI">Quirino</option>
+                    <option value="PH-RIZ">Rizal</option>
+                    <option value="PH-ROM">Romblon</option>
+                    <option value="PH-WSA">Samar (Western Samar)</option>
+                    <option value="PH-SAR">Sarangani</option>
+                    <option value="PH-SIG">Siquijor</option>
+                    <option value="PH-SOR">Sorsogon</option>
+                    <option value="PH-SCO">South Cotabato</option>
+                    <option value="PH-SLE">Southern Leyte</option>
+                    <option value="PH-SUK">Sultan Kudarat</option>
+                    <option value="PH-SLU">Sulu</option>
+                    <option value="PH-SUN">Surigao del Norte</option>
+                    <option value="PH-SUR">Surigao del Sur</option>
+                    <option value="PH-TAR">Tarlac</option>
+                    <option value="PH-TAW">Tawi-Tawi</option>
+                    <option value="PH-ZMB">Zambales</option>
+                    <option value="PH-ZAN">Zamboanga del Norte</option>
+                    <option value="PH-ZAS">Zamboanga del Sur</option>
+                    <option value="PH-ZSI">Zamboanga Sibugay</option>
+                </select><br />
+                <label>City/Town</label>
+                <select id="city">
+                    <option>City of Mati</option>
+                    <option>Davao City</option>
+                </select><br />
+                <label>Barangay</label>
+                <select id="barangay">
+                    <option>Central</option>
+                    <option>Badas</option>
+                </select><br />
+                <label>Message</label>
+                <textarea name="message" style="height:200px" placeholder="write something..."></textarea><br />
+                <input type="Submit" value="Submit">
+            </form>
+
+        </aside>
+        <div class="blocker"></div>
+        <footer>
+            <p>
+                Copyright &copy;2022 | Powered by CANDOR TECHNOLOGICAL COLLEGES, INC.
+            </p>
+        </footer>
+
+
+    </div>
 
 </body>
 
