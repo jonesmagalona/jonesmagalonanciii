@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Activity 1: Design the form below</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        form {
+            display: table;
+            padding-left: 15px;
+        }
+        
+        form>p {
+            display: table-row;
+        }
+        
+        label {
+            display: table-cell;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        
+        input {
+            display: table-cell;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        
+        select {
+            display: table-cell;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        
+        form>label {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Form Application</h1><br />
+    <form class="form">
+        <p>
+            <label>First Name</label>
+            <input type="text" name="firstname" placeholder="Your Name" /><br />
+        </p>
+        <p><label>Last Name</label>
+            <input type="text" name="lastname" placeholder="Your Last Name" /><br /></p>
+        <p><label>Email:</label>
+            <input type="text" name="email" placeholder="sample@host.com" /><br /></p>
+        <p><label>Telephone</label>
+            <input type="text" name="telno" placeholder="0878111184" /><br /></p>
+        <p><label>Province</label>
+            <select id="province">
+                    <option style="display:none;"></option>
+                    <option value="PH-ABR">Abra</option>
+                    <option value="PH-AGN">Agusan del Norte</option>
+                </select></p>
+        <p><label>City/Town</label>
+            <select id="city">
+                    <option style="display:none;"></option>
+                    <option>City of Mati</option>
+                    <option>Davao City</option>
+                </select></p>
+        <p><label>Barangay</label>
+            <select id="barangay">
+                    <option style="display:none;"></option>
+                    <option>Central</option>
+                    <option>Badas</option>
+                </select></p>
+        <p>
+            <label>Message</label>
+            <textarea name="message" style="height:200px" placeholder="write something..."></textarea></p>
+        <p><label></label><input type="Submit" value="Submit" style="margin:0px auto; display:block;"></p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Responsive Form - Seatwork 01</title>
+    <meta name="keywords" content="HTML, CSS, Bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css" />
+
+</head>
+
+<body>
+
+    <img src="assets/images/banner-960px-by-200px-html-form-application.png" style="width:100%">
+    <div class="container">
+        <form method="post" name="contact">
+            <div class="row">
+                <div class="col-25">
+                    <label>First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="fName" placeholder="Your Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lName" placeholder="Your Last Name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label>E-mail:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="email" placeholder="sample@host.com">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Telephone No.</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="telephone" name="telephone" placeholder="0878111184" maxlength="10">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Province</label>
+                </div>
+                <div class="col-75">
+                    <select id="province" name="province">
+            <option>Select your Province</option>
+          
+          </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>City/Town</label>
+                </div>
+                <div class="col-75">
+                    <select id="city" name="city">
+            <option>Select your Municipality or City</option>
+            
+          </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Barangay</label>
+                </div>
+                <div class="col-75">
+                    <select id="brgy" name="brgy">
+            <option>Select your Barangay</option>
+            
+          </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label>Message</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="message" style="height:200px;" placeholder="write something...."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="Submit" name="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
