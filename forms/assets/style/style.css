@@ -1,5 +1,5 @@
 body {
-    font-family: "Century Gothic";
+    font-family: 'Montserrat', sans-serif;
 }
 
 * {
@@ -8,7 +8,7 @@ body {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: GREEN;
     padding: 20px;
 }
 
@@ -48,7 +48,7 @@ input[type=submit]:hover {
 }
 
 .col-75 {
-    float: left;
+    float: right;
     width: 75%;
     margin-top: 6px;
 }
